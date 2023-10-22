@@ -25,3 +25,8 @@ microk8s kubectl port-forward svc/camunda-platform-connectors 8088:8080
 cambaito la proprietà:
 
     storageClassName: "microk8s-hostpath"
+
+
+kubectl delete pod camunda-platform-tasklist-7d54b5cbf9-lkpgx  --force --grace-period=0
+kubectl delete pod elasticsearch-master-0 --force --grace-period=0
+kubectl delete pod camunda-platform-zeebe-0 --force --grace-period=0
