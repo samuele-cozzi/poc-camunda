@@ -1,6 +1,7 @@
 
 
-helm install camunda-platform camunda/camunda-platform -n camunda -f deploy/helm/camunda/camunda-platform-core-microk8s-values.yaml
+helm install camunda-platform camunda/camunda-platform -n camunda -f deploy/helm/camunda/camunda-platform-core-microk8s-values-dev.yaml
+helm install camunda-platform camunda/camunda-platform -n camunda -f deploy/helm/camunda/camunda-platform-core-microk8s-values-dev.yaml
 
 
 microk8s kubectl config set-context --current --namespace=default
